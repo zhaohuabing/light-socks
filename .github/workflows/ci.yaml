@@ -2,14 +2,6 @@
 name: ci
 on: pull_request
 jobs:
-  yamllint:
-    name: yamllint
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out code into the Go module directory
-        uses: actions/checkout@v2
-      - name: yaml-lint
-        uses: ibiqlik/action-yamllint@v1
   shellcheck:
     name: shellcheck
     runs-on: ubuntu-latest
